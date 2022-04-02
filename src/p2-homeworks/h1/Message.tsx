@@ -1,5 +1,5 @@
 import React from 'react'
-import m from './Message.module.css'
+import st from './Message.module.css'
 import {MessageBlock} from './MessageBlock';
 
 type MessagePropsType = {
@@ -11,11 +11,11 @@ type MessagePropsType = {
 
 function Message(props: MessagePropsType) {
     return (
-        <div className={m.message}>
-            <div className={m.avatar}>
+        <div className={st.message}>
+            <div className={st.avatar}>
                 <img src={props.avatar} alt=""/>
             </div>
-            <div className={m.messageBlock}>
+            <div className={st.messageBlock}>
             <MessageBlock name={props.name} message={props.message} time={props.time}/>
             </div>
         </div>

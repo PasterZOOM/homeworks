@@ -1,0 +1,26 @@
+.messageBlock{
+    display: grid;
+    grid-template-areas:
+        "name"
+        "text"
+        "time";
+    grid-template-rows: 30px 1fr 30px;
+    background-color: #3a3a3a;
+    border-radius: 10px 10px 10px 0;
+}
+.name{
+    padding: 5px 10px 0 10px;
+    color: blueviolet;
+    grid-area: name;
+}
+.text{
+    padding: 0 10px 0 10px;
+    color: #b2fa74;
+    grid-area: text;
+}
+.time{
+    color: #408100;
+    grid-area: time;
+    text-align: right;
+    padding: 0 10px 5px 10px;
+}

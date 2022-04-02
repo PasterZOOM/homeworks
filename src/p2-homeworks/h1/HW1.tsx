@@ -18,7 +18,6 @@ function HW1() {
                 message={messageData.message}
                 time={messageData.time}
             />
-
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeMessage/>*/}

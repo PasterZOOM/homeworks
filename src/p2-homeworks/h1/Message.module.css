@@ -4,24 +4,13 @@
     position: relative;
     display: grid;
     grid-template-areas:
-        "avatar message";
-    grid-template-columns: 60px 200px;
-    z-index: -1;
-}
-.tongue {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 25px;
-    height: 25px;
-    background-color: #3a3a3a;
+            "avatar message";
+    grid-template-columns: 60px 250px;
     z-index: -1;
 }
 .avatar {
     position: relative;
     grid-area: avatar;
-    border-bottom-right-radius: 20px;
-    background-color: chartreuse;
 }
 .avatar img {
     position: absolute;

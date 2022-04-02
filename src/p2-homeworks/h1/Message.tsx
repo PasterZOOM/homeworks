@@ -14,7 +14,6 @@ function Message(props: MessagePropsType) {
         <div className={m.message}>
             <div className={m.avatar}>
                 <img src={props.avatar} alt=""/>
-                <div className={m.tongue}></div>
             </div>
             <div className={m.messageBlock}>
             <MessageBlock name={props.name} message={props.message} time={props.time}/>

@@ -1,6 +1,5 @@
 .message {
     padding: 10px;
-    background-color: chartreuse;
     position: relative;
     display: grid;
     grid-template-areas:
@@ -19,7 +18,4 @@
     width: 50px;
     border-radius: 50%;
 
-}
-.messageBlock{
-    grid-area: message;
 }

@@ -16,7 +16,7 @@ function Message(props: MessagePropsType) {
                 <img src={props.avatar} alt=""/>
             </div>
             <div className={st.messageBlock}>
-            <MessageBlock name={props.name} message={props.message} time={props.time}/>
+                <MessageBlock name={props.name} message={props.message} time={props.time}/>
             </div>
         </div>
     )

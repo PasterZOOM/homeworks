@@ -7,7 +7,7 @@
     grid-template-rows: 30px 1fr 30px;
     position: relative;
     border-radius: 10px 10px 10px 0;
-    background: #4d5156;
+    background: #4f4f4f;
     color: #bbfbbc;
 }
 .messageBlock::after {
@@ -18,18 +18,22 @@
     display: block;
     width: 20px;
     height: 20px;
-    background: radial-gradient(40px at top left, transparent 49%, #4d5156 51%) no-repeat right bottom;
+    background: radial-gradient(40px at top left, transparent 50%, #4f4f4f 0) no-repeat right bottom;
 }
 
 .name{
+    font-size: 20px;
+    font-weight: bold;
     padding: 5px 10px 0 10px;
     color: blueviolet;
     grid-area: name;
 }
 .text{
+    max-width: 230px;
     padding: 0 10px 0 10px;
     color: #b2fa74;
     grid-area: text;
+    word-wrap: break-word;
 }
 .time{
     color: #408100;

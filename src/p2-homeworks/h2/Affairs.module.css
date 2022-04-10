@@ -1,9 +1,11 @@
 .someClass {
- text-align: center;
+    text-align: center;
 }
-.st1{
+
+.st1 {
     width: 90px;
 }
-.st2{
+
+.st2 {
     width: 55px;
 }

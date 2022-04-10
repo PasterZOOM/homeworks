@@ -1,0 +1,19 @@
+.someClass {
+    text-align: center;
+    background-color: bisque;
+    border: 1px solid grey;
+
+}
+
+.st1 {
+    width: 88px;
+    border: 1px solid grey;
+}
+
+.st2 {
+    width: 53px;
+    border: 1px solid grey;
+}
+.st3{
+    border: 1px solid grey;
+}

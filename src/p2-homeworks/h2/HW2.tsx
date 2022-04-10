@@ -59,12 +59,11 @@ function HW2() {
                         deleteAffairCallback={deleteAffairCallback}
                     />
                 ))}
-                <Button name={'All'} callBack={()=>setFilter('all')}/>
-                <Button name={'High'} callBack={()=>setFilter('high')}/>
-                <Button name={'Middle'} callBack={()=>setFilter('middle')}/>
-                <Button name={'Low'} callBack={()=>setFilter('low')}/>
+                <Button name={'All'} callBack={() => setFilter('all')}/>
+                <Button name={'High'} callBack={() => setFilter('high')}/>
+                <Button name={'Middle'} callBack={() => setFilter('middle')}/>
+                <Button name={'Low'} callBack={() => setFilter('low')}/>
             </div>
-
             <hr/>
         </div>
     )

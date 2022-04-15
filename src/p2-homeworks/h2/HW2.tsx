@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import {AlternativeAffairs} from './AlternativeAffairs';
-import {Button} from './Button';
+import AlternativeAffairs from './AlternativeAffairs';
 
 // types
 export type AffairPriorityType = 'high' | 'middle' | 'low' // need to fix any
@@ -51,18 +50,7 @@ function HW2() {
 
             <hr/>
             <div>
-                {filteredAffairs.map((a: AffairType) => (
-                    <AlternativeAffairs
-                        key={a._id}
-                        id={a._id}
-                        affair={a}
-                        deleteAffairCallback={deleteAffairCallback}
-                    />
-                ))}
-                <Button name={'All'} callBack={() => setFilter('all')}/>
-                <Button name={'High'} callBack={() => setFilter('high')}/>
-                <Button name={'Middle'} callBack={() => setFilter('middle')}/>
-                <Button name={'Low'} callBack={() => setFilter('low')}/>
+                {/*<AlternativeAffairs/>*/}
             </div>
             <hr/>
         </div>

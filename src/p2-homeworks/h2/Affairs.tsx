@@ -25,9 +25,7 @@ function Affairs(props: AffairsPropsType) {
 
     return (
         <div>
-
             {mappedAffairs}
-
             <button onClick={setAll}>All</button>
             <button onClick={setHigh}>High</button>
             <button onClick={setMiddle}>Middle</button>

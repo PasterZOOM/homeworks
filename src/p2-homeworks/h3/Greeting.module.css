@@ -1,7 +1,68 @@
-.someClass {
-
+.body{
+    display: grid;
+    grid-template-areas:
+    'input' 'button' 'counter';
+    grid-template-columns: 175px 80px 30px;
 }
 
-.error {
-    border: 1px solid red;
+.someClass {
+    width: 160px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.error{
+    width: 160px;
+    height: 20px;
+    border: 1px solid rgba(255, 0, 0, 0.33);
+    border-radius: 3px;
+    background-color: rgba(255, 0, 0, 0.18);
+    transition: 0.5s;
+}
+
+.textError{
+    color: red;
+}
+
+.inputError{
+    grid-area: input;
+    height: 40px;
+    display: inline-block;
+}
+
+.buttonAdd{
+    grid-area: button;
+    height: 25px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: rgba(77, 182, 77, 0.33);
+    color: black;
+    transition: 0.5s;
+}
+
+.buttonAdd:hover{
+    box-shadow: 0 2px 5px black;
+    background-color: rgba(77, 182, 77, 0.66);
+}
+
+.buttonAdd:active {
+    background-color: rgba(77, 182, 77, 0.99);
+    box-shadow: 0 1px 2.5px black;
+    transform: translateY(1px);
+}
+.buttonAdd:disabled{
+    cursor: not-allowed;
+    color: rgba(0, 0, 0, 0.33);
+    background-color: rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.counter{
+    grid-area: counter;
+    padding-left: 10px;
 }

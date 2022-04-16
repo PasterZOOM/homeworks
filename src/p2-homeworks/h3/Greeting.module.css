@@ -37,8 +37,6 @@
     width: 40px;
     border: 1px solid black;
     border-radius: 2px;
-    background-color: rgba(77, 182, 77, 0.33);
-    color: black;
     transition: 0.5s;
 }
 
@@ -54,13 +52,10 @@
 }
 .buttonAdd:disabled{
     cursor: not-allowed;
-    color: rgba(0, 0, 0, 0.33);
     background-color: rgba(0, 0, 0, 0.20);
-    border: 1px solid rgba(0, 0, 0, 0.20);
     box-shadow: none;
     transform: translateY(0);
 }
-
 
 .counter{
     grid-area: counter;

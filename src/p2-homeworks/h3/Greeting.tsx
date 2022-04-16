@@ -25,7 +25,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     onChange={setNameCallback}
                     onKeyPress={onKeyPress}
                     className={inputClass}
-                    onBlur={setNameCallback}
+                    // onBlur={setNameCallback}
                 />
                 <div className={s.textError}>{error}</div>
             </div>

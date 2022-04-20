@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
-import AlternativeAffairs from './AlternativeAffairs';
 
 // types
 export type AffairPriorityType = 'high' | 'middle' | 'low' // need to fix any
@@ -46,6 +45,7 @@ function HW2() {
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}
+                filter={filter}
             />
 
             <hr/>

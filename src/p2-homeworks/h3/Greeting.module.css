@@ -10,7 +10,7 @@
     height: 20px;
     border: 1px solid black;
     border-radius: 3px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 .error{
     width: 160px;
@@ -18,16 +18,12 @@
     border: 1px solid rgba(255, 0, 0, 0.33);
     border-radius: 3px;
     background-color: rgba(255, 0, 0, 0.18);
-    transition: 0.5s;
-}
-
-.textError{
-    color: red;
+    transition: 0.4s;
 }
 
 .inputError{
     grid-area: input;
-    height: 40px;
+    height: 45px;
     display: inline-block;
 }
 
@@ -37,7 +33,7 @@
     width: 40px;
     border: 1px solid black;
     border-radius: 2px;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .buttonAdd:hover{

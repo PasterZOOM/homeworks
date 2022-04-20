@@ -1,11 +1,35 @@
+.body {
+    display: grid;
+    grid-template-rows: 150px 30px;
+}
+
+.mappedAffairs{
+}
+
+.filterButtons{
+
+}
 .someClass {
     text-align: center;
 }
 
 .st1 {
-    width: 90px;
+    width: 100px;
+}
+.high {
+    width: 70px;
+    color: rgba(255, 0, 0, 1);
+}
+.middle {
+    width: 70px;
+    color: rgba(255, 0, 0, 0.66);
+}
+.low {
+    width: 70px;
+    color: rgba(255, 0, 0, 0.33);
 }
 
-.st2 {
-    width: 55px;
+.activeFilter{
+    background: rgba(77, 182, 77, 0.99);
+    transition: 0.4s;
 }

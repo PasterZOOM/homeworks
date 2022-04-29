@@ -20,7 +20,6 @@ function Pages() {
                 <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
                 <Route path={PATH.JUNIOR} element={<Error404/>}/>
                 <Route path={PATH['JUNIOR+']} element={<Error404/>}/>
-                {/*// add routes*/}
                 {/*он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
                 <Route path={'/*'} element={<Error404/>}/>
             </Routes>

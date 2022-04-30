@@ -1,0 +1,54 @@
+.nav{
+    position: relative;
+}
+.hiddenM {
+    display: block;
+    position: relative;
+    padding: 7px;
+    left: -200px;
+    transition: 0.4s;
+}
+
+.hiddenMT {
+    display: none;
+}
+
+.btnM {
+    background-color: rgba(77, 182, 77, 0.99);
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
+    transition: 0.4s;
+}
+.btnM:hover {
+    background-color: rgba(77, 182, 77, 0.99);
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    left: 5px;
+    transition: 0.4s;
+    box-shadow: 0 2px 5px black;
+}
+
+.hiddenMT:checked ~ .btnM {
+    left: 200px;
+}
+.hiddenMT:checked ~ .hiddenM {
+    left: 0;
+}
+.item{
+    color: #000000;
+    text-decoration: none;
+}
+.item:hover{
+    color: rgba(77, 182, 77, 0.66);
+}
+.active{
+    color: rgba(77, 182, 77, 0.99);
+    text-decoration: none;
+}

@@ -4,8 +4,8 @@
 .hiddenM {
     display: block;
     position: relative;
-    padding: 7px;
-    left: -200px;
+    padding: 5px;
+    left: -220px;
     transition: 0.4s;
 }
 
@@ -28,12 +28,13 @@
 }
 
 .hiddenMT:checked ~ .btnM {
-    left: 200px;
+    left: 220px;
 }
 .hiddenMT:checked ~ .hiddenM {
     left: 0;
 }
 .item{
+    margin: 5px;
     color: #000000;
     text-decoration: none;
 }
@@ -41,6 +42,7 @@
     color: rgba(77, 182, 77, 0.66);
 }
 .active{
+    margin: 5px;
     color: rgba(77, 182, 77, 0.99);
     text-decoration: none;
 }

@@ -24,14 +24,6 @@
     transition: 0.4s;
 }
 .btnM:hover {
-    background-color: rgba(77, 182, 77, 0.99);
-    position: absolute;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    top: 5px;
-    left: 5px;
-    transition: 0.4s;
     box-shadow: 0 2px 5px black;
 }
 

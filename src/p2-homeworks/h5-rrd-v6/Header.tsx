@@ -13,12 +13,6 @@ function Header() {
                     <NavLink to={PATH['JUNIOR+']} className = {({isActive}) => isActive ? style.active : style.item}> Junior+ </NavLink>
                 </div>
             <label className={style.btnM} htmlFor="hmt"/>
-
-            {/*<div >*/}
-            {/*    <NavLink to={PATH.PRE_JUNIOR}> PreJunior </NavLink>*/}
-            {/*    <NavLink to={PATH.JUNIOR}> Junior </NavLink>*/}
-            {/*    <NavLink to={PATH['JUNIOR+']}> Junior+ </NavLink>*/}
-            {/*</div>*/}
         </div>
     )
 }

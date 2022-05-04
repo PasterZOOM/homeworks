@@ -15,7 +15,7 @@ function Header() {
                 <NavLink to={PATH['JUNIOR+']}
                          className={({isActive}) => isActive ? style.active : style.item}> Junior+ </NavLink>
             </div>
-            <label className={style.btnM} htmlFor="hmt"/>
+            <label className={style.btnM} htmlFor="hmt" title={'Жмякни'}/>
         </div>
     )
 }

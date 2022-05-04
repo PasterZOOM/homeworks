@@ -1,6 +1,7 @@
-.nav{
+.nav {
     position: relative;
 }
+
 .hiddenM {
     display: block;
     position: relative;
@@ -23,6 +24,7 @@
     left: 5px;
     transition: 0.4s;
 }
+
 .btnM:hover {
     box-shadow: 0 2px 5px black;
 }
@@ -30,18 +32,22 @@
 .hiddenMT:checked ~ .btnM {
     left: 220px;
 }
+
 .hiddenMT:checked ~ .hiddenM {
     left: 0;
 }
-.item{
+
+.item {
     margin: 5px;
     color: #000000;
     text-decoration: none;
 }
-.item:hover{
+
+.item:hover {
     color: rgba(77, 182, 77, 0.66);
 }
-.active{
+
+.active {
     margin: 5px;
     color: rgba(77, 182, 77, 0.99);
     text-decoration: none;

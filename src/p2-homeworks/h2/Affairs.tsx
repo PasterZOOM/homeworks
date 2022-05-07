@@ -4,36 +4,31 @@ import {AffairType, FilterType} from './HW2'
 import SuperButton from '../h4/common/c2-SuperButton/SuperButton';
 import s from './Affairs.module.css'
 
-type AffairsPropsType = { // need to fix any
+type AffairsPropsType = {
     data: Array<AffairType>
     setFilter: (filter: FilterType) => void
     deleteAffairCallback: (id: number) => void
     filter: FilterType
 }
 
-function Affairs(props: AffairsPropsType) {
-    const mappedAffairs = props.data.map((a: AffairType) => (
-        <Affair // should work
-            key={a._id}// кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
-            id={a._id}
-            affair={a}
-            deleteAffairCallback={props.deleteAffairCallback}
+function Affairs({data, setFilter, deleteAffairCallback, filter}: AffairsPropsType) {
+    const mappedAffairs = data.map((a: AffairType) =>
+        <Affair key={a._id}
+                id={a._id}
+                affair={a}
+                deleteAffairCallback={deleteAffairCallback}
         />
-    ))
+    )
 
+    const setAll = () => setFilter('all')
+    const setHigh = () => setFilter('high')
+    const setMiddle = () => setFilter('middle')
+    const setLow = () => setFilter('low')
 
-    const setAll = () => {
-        props.setFilter('all')
-    } // need to fix
-    const setHigh = () => {
-        props.setFilter('high')
-    }
-    const setMiddle = () => {
-        props.setFilter('middle')
-    }
-    const setLow = () => {
-        props.setFilter('low')
-    }
+    const buttonAllClassName = filter === 'all' ? s.activeFilter : ''
+    const buttonHighClassName = filter === 'high' ? s.activeFilter : ''
+    const buttonMiddleClassName = filter === 'middle' ? s.activeFilter : ''
+    const buttonLowClassName = filter === 'low' ? s.activeFilter : ''
 
     return (
         <div className={s.body}>
@@ -41,14 +36,10 @@ function Affairs(props: AffairsPropsType) {
                 {mappedAffairs}
             </div>
             <div className={s.filterButtons}>
-                <SuperButton onClick={setAll}
-                             className={props.filter === 'all' ? s.activeFilter : ''}>All</SuperButton>
-                <SuperButton onClick={setHigh}
-                             className={props.filter === 'high' ? s.activeFilter : ''}>High</SuperButton>
-                <SuperButton onClick={setMiddle}
-                             className={props.filter === 'middle' ? s.activeFilter : ''}>Middle</SuperButton>
-                <SuperButton onClick={setLow}
-                             className={props.filter === 'low' ? s.activeFilter : ''}>Low</SuperButton>
+                <SuperButton onClick={setAll} className={buttonAllClassName}>All</SuperButton>
+                <SuperButton onClick={setHigh} className={buttonHighClassName}>High</SuperButton>
+                <SuperButton onClick={setMiddle} className={buttonMiddleClassName}>Middle</SuperButton>
+                <SuperButton onClick={setLow} className={buttonLowClassName}>Low</SuperButton>
             </div>
         </div>
     )

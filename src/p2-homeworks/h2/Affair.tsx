@@ -10,23 +10,20 @@ type AffairPropsType = {
     deleteAffairCallback: (id: number) => void // need to fix any
 }
 
-function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {
-        props.deleteAffairCallback(props.id)
-    }// need to fix
-    const priority = props.affair.priority
-    const priorityTextColor = `${
-        priority === 'high' ? s.high :
-            priority === 'middle' ? s.middle :
-                priority === 'low' ? s.low : ''
-    }`
+function Affair({id, affair, deleteAffairCallback}: AffairPropsType) {
 
+    const deleteCallback = () => deleteAffairCallback(id)
+
+    const priorityTextColor =
+        affair.priority === 'high' ? s.high :
+            affair.priority === 'middle' ? s.middle :
+                affair.priority === 'low' ? s.low : ''
 
     return (
         <tbody>
         <tr className={s.someClass}>
-            <td className={s.st1}>{props.affair.name}</td>
-            <td className={priorityTextColor}>{priority}</td>
+            <td className={s.st1}>{affair.name}</td>
+            <td className={priorityTextColor}>{affair.priority}</td>
             <td><SuperButton onClick={deleteCallback}>X</SuperButton></td>
         </tr>
         </tbody>

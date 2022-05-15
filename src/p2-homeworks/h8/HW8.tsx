@@ -21,14 +21,10 @@ function HW8() {
     const [people, setPeople] = useState<Array<UserType>>(initialPeople) // need to fix any
 
     const finalPeople = people.map((p: UserType) => (
-        <tbody key={p._id}>
-        <div>
-            <tr>
-                <td style={{width: '100px', paddingLeft: '5px'}}>{p.name}</td>
-                <td style={{width: '100px', textAlign: 'center'}}> {p.age}</td>
-            </tr>
-        </div>
-        </tbody>
+        <tr key={p._id}>
+            <td style={{width: '100px', paddingLeft: '5px'}}>{p.name}</td>
+            <td style={{width: '100px', textAlign: 'center'}}> {p.age}</td>
+        </tr>
     ))
 
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sort', payload: 'up'}))
@@ -41,11 +37,15 @@ function HW8() {
             homeworks 8
 
             {/*should work (должно работать)*/}
-            {finalPeople}
+            <div style={{height: '130px'}}>
+                <tbody>
+                {finalPeople}
+                </tbody>
+            </div>
+                <span><SuperButton onClick={sortUp}>sort up</SuperButton></span>
+                <span><SuperButton onClick={sortDown}>sort down</SuperButton></span>
+                <span><SuperButton onClick={check18}>check 18</SuperButton></span>
 
-            <span><SuperButton onClick={sortUp}>sort up</SuperButton></span>
-            <span><SuperButton onClick={sortDown}>sort down</SuperButton></span>
-            <span><SuperButton onClick={check18}>check 18</SuperButton></span>
 
 
 

@@ -37,10 +37,13 @@ function HW8() {
             homeworks 8
 
             {/*should work (должно работать)*/}
-            <div style={{height: '130px'}}>
-                <tbody>
-                {finalPeople}
-                </tbody>
+            <div style={{height: '155px'}}>
+                <table >
+                    <tbody>
+                    {finalPeople}
+                    </tbody>
+                </table>
+
             </div>
                 <span><SuperButton onClick={sortUp}>sort up</SuperButton></span>
                 <span><SuperButton onClick={sortDown}>sort down</SuperButton></span>

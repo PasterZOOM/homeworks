@@ -5,7 +5,7 @@ import {AppStoreType} from './bll/store';
 import {loadingAC} from './bll/loadingReducer';
 
 function HW10() {
-    const loading = useSelector<AppStoreType, boolean>(state => state.loading.load)
+    const isLoading = useSelector<AppStoreType, boolean>(state => state.loading.isLoading)
     const dispatch = useDispatch()
 
     const setLoading = () => {
@@ -20,7 +20,7 @@ function HW10() {
             homeworks 10
 
             {/*should work (должно работать)*/}
-            {loading
+            {isLoading
                 ? (
                     <div>
                         <img style={{height: '25px'}}

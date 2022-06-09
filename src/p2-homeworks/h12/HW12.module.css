@@ -1,5 +1,5 @@
 .dark {
-    background: dimgrey;
+    background: #000000;
 }
 
 .dark-text {
@@ -7,7 +7,7 @@
 }
 
 .red {
-    background: lightcoral;
+    background: #ff0000;
 }
 
 .red-text {
@@ -20,4 +20,20 @@
 
 .some-text {
     color: darkslateblue;
+}
+
+.white {
+    background: #ffffff;
+}
+
+.white-text {
+    color: #000000;
+}
+
+.gold {
+    background: #cb843c;
+}
+
+.gold-text {
+    color: #4a6035;
 }

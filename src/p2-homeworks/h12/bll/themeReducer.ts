@@ -1,5 +1,5 @@
 const initState = {
-    value: ''
+    value: 'white'
 };
 
 type InitialStateType = typeof initState

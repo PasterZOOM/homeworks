@@ -22,7 +22,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             setName(trimmedName)
             setError('')
         } else {
-            setName('')
             setError('Enter name')
         }
         // need to fix

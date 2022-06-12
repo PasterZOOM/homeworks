@@ -22,7 +22,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     const handleChange = (event: Event, newValue: number | number[]) => {
         onChangeRange && onChangeRange(newValue as number)
         if (value1 && value2 && value2 < value1 + 2 && value2 !== 100) {
-            onChangeRange2 && onChangeRange2(value1 + 1)
+            onChangeRange2 && onChangeRange2(value1)
         }
     }
 

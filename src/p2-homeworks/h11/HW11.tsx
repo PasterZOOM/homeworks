@@ -1,10 +1,16 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
+import {AlternativeSuperDoubleRange} from './common/c8-SuperDoubleRange/AlternativeSuperDoubleRange';
+import { AlternativeSuperRange } from './common/c7-SuperRange/AlternativeSuperRange';
 
 function HW11() {
-    const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+
+    const min = 0
+    const max = 100
+
+    const [value1, setValue1] = useState<number>(min)
+    const [value2, setValue2] = useState<number>(max)
 
     const onChangeRange = ([value1, value2]: [number, number]) => {
         setValue1(value1)
@@ -46,8 +52,15 @@ function HW11() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeSuperRange/>*/}
-            {/*<AlternativeSuperDoubleRange/>*/}
+            <AlternativeSuperRange onChangeRange={(valueSlide)=>{setValue1(valueSlide)}}
+                                   value1={value1}
+                                   value={value1}
+                                   />
+            <AlternativeSuperDoubleRange min={min}
+                                         max={max}
+                                         onChange={({value1, value2}) => {setValue1(value1); setValue2(value2)}}
+                                         value1={value1}
+                                         value2={value2}/>
             <hr/>
         </div>
     )

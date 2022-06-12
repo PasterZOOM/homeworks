@@ -27,6 +27,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                 size="small"
                 value={value}
                 onChange={handleChange}
+                disableSwap
                 min={minValue ? minValue : 0}
                 max={maxValue ? maxValue : 100}
                 disabled={disabled}

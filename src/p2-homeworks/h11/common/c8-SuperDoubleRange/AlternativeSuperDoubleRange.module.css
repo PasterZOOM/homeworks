@@ -27,7 +27,6 @@
     box-shadow: 0 0 0 1px #D1D1D1;
     background-color: #EFEFEF;
     width: 100%;
-
 }
 
 .slider__range {
@@ -45,16 +44,8 @@
     left: 330px
 }
 
-
-/* Removing the default appearance */
-.thumb,
-.thumb::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    -webkit-tap-highlight-color: transparent;
-}
-
 .thumb {
-    pointer-events: none;
+    pointer-events:none ;
     position: absolute;
     height: 0;
     width: 300px;
@@ -71,13 +62,6 @@
 
 /* For Chrome browsers */
 .thumb::-webkit-slider-thumb {
-    background-color: #0075FF;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 16px;
-    width: 16px;
     margin-top: 4px;
     pointer-events: all;
-    position: relative;
 }

@@ -1,9 +1,12 @@
-import axios from "axios"
+import axios from 'axios'
 
 type ResponseAuthAPIType = {
-    error: string,
-    method: string,
-    url: string
+    errorText: string,
+    info: string,
+    yourBody: {
+        success: boolean
+    },
+    yourQuery: {}
 }
 
 const instance = axios.create({
@@ -12,7 +15,7 @@ const instance = axios.create({
 )
 
 export const RequestsAPI = {
-    me() {
-        return instance.post<ResponseAuthAPIType>(`/auth/test`)
+    test(success: boolean) {
+        return instance.post<ResponseAuthAPIType>(`/auth/test`, {success: success})
     }
 }

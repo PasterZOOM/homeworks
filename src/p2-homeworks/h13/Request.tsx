@@ -21,7 +21,7 @@ export const Request: React.FC<RequestPropsType> = () => {
             .catch(Error => {
                 console.log({...Error})
                 console.warn(Error.response.data.info)
-                setStatus('Что-то пошло не так, смотри консоль')
+                setStatus(Error.response.data.errorText)
             })
     }
 
